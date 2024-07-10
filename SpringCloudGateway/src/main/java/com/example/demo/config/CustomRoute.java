@@ -16,6 +16,8 @@ public class CustomRoute {
                         .uri("http://localhost:9999"))
                 .route("ms2", r -> r.path("/ms2/**")
                         .uri("http://localhost:9998"))
+                .route("ms3", r -> r.path("/ms3/**")
+                        .uri("http://localhost:9997"))
                 .build();
     }
 }
