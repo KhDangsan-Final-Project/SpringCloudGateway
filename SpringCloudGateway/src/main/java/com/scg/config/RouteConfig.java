@@ -24,6 +24,10 @@ public class RouteConfig {
                     return r.path("/ms3/**")
                             .uri("http://localhost:9997");
                 })
+                .route("ms4", r -> {
+                    return r.path("/ms4/**")
+                            .uri("http://localhost:9996");
+                })
                 .build();
     }
 }
