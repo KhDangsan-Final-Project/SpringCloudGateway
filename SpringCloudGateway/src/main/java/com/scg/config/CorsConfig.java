@@ -12,9 +12,8 @@ public class CorsConfig {
     @Bean
     public CorsWebFilter corsWebFilter() {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
-        corsConfiguration.addAllowedOrigin("http://localhost:8080");
-        corsConfiguration.addAllowedOrigin("http://localhost:3000");
-        corsConfiguration.addAllowedOrigin("http://finalfrontend.s3-website.ap-northeast-2.amazonaws.com");
+        corsConfiguration.addAllowedOriginPattern("*");
+//        corsConfiguration.addAllowedOrigin("http://finalfrontend.s3-website.ap-northeast-2.amazonaws.com");
         corsConfiguration.addAllowedMethod("*");
         corsConfiguration.addAllowedHeader("*");
         corsConfiguration.setAllowCredentials(true);
