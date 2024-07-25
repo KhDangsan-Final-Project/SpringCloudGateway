@@ -40,6 +40,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 		<!-- <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -51,6 +52,8 @@
 		    <artifactId>spring-cloud-starter-bus-amqp</artifactId>
 		    <version>4.1.2</version>
 		</dependency>
+=======
+>>>>>>> branch 'master' of https://github.com/KhDangsan-Final-Project/SpringCloudGateway
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
 		    <artifactId>jackson-databind</artifactId>
@@ -74,6 +77,11 @@
 	        <groupId>org.springframework.boot</groupId>
 	        <artifactId>spring-boot-starter-data-mongodb</artifactId>
     	</dependency>
+    	<!-- Spring Boot Actuator Dependency 추가 -->
+    	<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
