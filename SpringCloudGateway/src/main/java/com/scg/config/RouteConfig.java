@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class RouteConfig {
 
     @Bean
-    public RouteLocator ms1Route(RouteLocatorBuilder builder) {
+    public RouteLocator Route(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("ms1", r -> r.path("/ms1/**")
                         .uri("lb://MS1-SERVICE"))
