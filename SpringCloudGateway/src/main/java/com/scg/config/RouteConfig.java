@@ -26,11 +26,6 @@ public class RouteConfig {
                 .route("ms3-actuator", r -> r.path("/ms3/actuator/**")
                         .uri("lb://MS3-SERVICE/ms3/actuator"))
                 
-                .route("ms4", r -> r.path("/ms4/**")
-                        .uri("lb://MS4-SERVICE"))
-                .route("ms4-actuator", r -> r.path("/ms4/actuator/**")
-                        .uri("lb://MS4-SERVICE/ms4/actuator"))
-                
                 .build();
     }
 }
