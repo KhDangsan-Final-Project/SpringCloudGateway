@@ -12,19 +12,19 @@ public class RouteConfig {
     public RouteLocator Route(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("ms1", r -> r.path("/ms1/**")
-                        .uri("lb://MS1-SERVICE"))
+                        .uri("http://localhost:30114"))
                 .route("ms1-actuator", r -> r.path("/ms1/actuator/**")
-                        .uri("lb://MS1-SERVICE/ms1/actuator"))
+                        .uri("http://localhost:30114/ms1/actuator"))
                 
                 .route("ms2", r -> r.path("/ms2/**")
-                        .uri("lb://MS2-SERVICE"))
+                        .uri("http://localhost:30115"))
                 .route("ms2-actuator", r -> r.path("/ms2/actuator/**")
-                        .uri("lb://MS2-SERVICE/ms2/actuator"))
+                        .uri("http://localhost:30115/ms2/actuator"))
                 
                 .route("ms3", r -> r.path("/ms3/**")
-                        .uri("lb://MS3-SERVICE"))
+                        .uri("http://localhost:30116"))
                 .route("ms3-actuator", r -> r.path("/ms3/actuator/**")
-                        .uri("lb://MS3-SERVICE/ms3/actuator"))
+                        .uri("http://localhost:30116/ms3/actuator"))
                 
                 .build();
     }
